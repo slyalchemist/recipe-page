@@ -24,11 +24,27 @@ html{
     width: 90%;
     max-width: 800px;
     padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-card, .prep-card, .ingredient-card, .instruction-card, .nutrition-card{
+    width: 90%;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 18px;
 }
 
 h1, h2, h3, h4{
-    padding: 0;
+    padding: 18px 0 6px;
     margin: 0;
+
 }
 
 h1, h3{
@@ -37,8 +53,77 @@ h1, h3{
 
 h1{
     font-weight: 700;
+    font-size: 36px;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--wenge-brown);
+    margin-bottom: 18px;
 }
 
 h3{
     font-weight: 600;
+    font-size: 20px;
+    color: var(--nutmeg);
+}
+
+h4{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--dark-raspberry);
+}
+
+span{
+    font-weight: 600;
+}
+
+.prep-card{
+    background-color: var(--rose-white);
+    padding: 5px 16px 16px;
+}
+
+.border{
+    width: 90%;
+    border: 1px solid var(--light-grey);
+}
+
+.nutrition-card .border{
+    width: 100%;
+}
+
+ol, ul{
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+li{
+    color: var(--wenge-brown);
+    padding: 5px;
+    padding-left: 16px;
+}
+
+li::marker{
+    color: var(--nutmeg)
+}
+
+ol li::marker{
+    font-weight: 600;
+}
+
+p{
+    color: var(--wenge-brown);
+}
+.nutrition{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 36px;
+}
+
+.nutrition-data{
+    font-weight: 600;
+    color: var(--nutmeg);
+    margin-right: auto;
+    margin-left: auto;
 }
